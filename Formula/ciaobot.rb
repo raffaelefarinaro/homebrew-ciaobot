@@ -12,8 +12,14 @@ class Ciaobot < Formula
 
   def install
     python = Formula["python@3.12"].opt_bin/"python3.12"
-    venv = virtualenv_create(libexec, python)
-    venv.pip_install_and_link buildpath.glob("ciaobot-*.whl").first
+    virtualenv_create(libexec, python)
+    # Install the wheel *with* its dependency tree. Homebrew's
+    # `virtualenv` `pip_install` helpers pass --no-deps (they expect every
+    # dependency vendored as a `resource`); this app has none, so use pip
+    # directly and let it resolve the pinned deps from PyPI at install time.
+    system libexec/"bin/python", "-m", "pip", "install",
+           buildpath.glob("ciaobot-*.whl").first
+    bin.install_symlink Dir[libexec/"bin/ciao*"]
   end
 
   def post_install
