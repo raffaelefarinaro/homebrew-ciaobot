@@ -1,5 +1,3 @@
-require "language/python/virtualenv"
-
 class Ciaobot < Formula
   include Language::Python::Virtualenv
 
@@ -15,7 +13,7 @@ class Ciaobot < Formula
   def install
     python = Formula["python@3.12"].opt_bin/"python3.12"
     venv = virtualenv_create(libexec, python)
-    venv.pip_install buildpath.glob("ciaobot-*.whl").first
+    venv.pip_install_and_link buildpath.glob("ciaobot-*.whl").first
   end
 
   def post_install
