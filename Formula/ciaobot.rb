@@ -3,9 +3,9 @@ class Ciaobot < Formula
 
   desc "Local-first personal assistant server"
   homepage "https://github.com/raffaelefarinaro/ciaobot"
-  url "https://github.com/raffaelefarinaro/ciaobot/releases/download/v0.4.23/ciaobot-0.4.23-py3-none-any.whl"
-  version "0.4.23"
-  sha256 "a5a198c1b4b514a911e2efca2f3ceafed4762ce35d048ba718360b4defb310e8"
+  url "https://github.com/raffaelefarinaro/ciaobot/releases/download/v0.4.24/ciaobot-0.4.24-py3-none-any.whl"
+  version "0.4.24"
+  sha256 "ec045bf12c8f40038bb7772597c26add8c4108045dcd3b893ccaa8e597641b86"
   license "Apache-2.0"
 
   depends_on "python@3.12"
@@ -53,7 +53,7 @@ class Ciaobot < Formula
       Finish setup with `ciao run`, then open http://localhost:8443 and
       follow the wizard: it asks for a workspace folder and a model
       provider, then installs the menu bar app and background server.
-      Afterwards, open Ciaobot from the menu bar icon or Ciaobot.app.
+      Afterwards, open Ciaobot from the menu bar icon or Ciaobot Server.app.
 
       Scripted or headless setups can skip the wizard:
 
