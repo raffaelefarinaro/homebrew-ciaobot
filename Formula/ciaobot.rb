@@ -3,9 +3,9 @@ class Ciaobot < Formula
 
   desc "Local-first personal assistant server"
   homepage "https://github.com/raffaelefarinaro/ciaobot"
-  url "https://github.com/raffaelefarinaro/ciaobot/releases/download/v0.4.28/ciaobot-0.4.28-py3-none-any.whl"
-  version "0.4.28"
-  sha256 "9425cb0b21ee71bbea061447af6a13503a56e3aa8dafd3d9f4e471ed6091e8ed"
+  url "https://github.com/raffaelefarinaro/ciaobot/releases/download/v0.4.29/ciaobot-0.4.29-py3-none-any.whl"
+  version "0.4.29"
+  sha256 "3c182cc4099e9e02952c84e8477b9516da982b400c9ad79cf18c6a29e07e97b0"
   license "Apache-2.0"
 
   depends_on "python@3.12"
