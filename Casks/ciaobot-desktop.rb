@@ -1,6 +1,6 @@
 cask "ciaobot-desktop" do
-  version "0.6.0"
-  sha256 "6b54337b645ac4e3138a339d6f24362dfbdcbf9fefe34cf950a9869d2530271d"
+  version "0.6.1"
+  sha256 "5b8e73aaf362344f82ae21097db72d6c378563ed1cd932204354c441c778be7a"
 
   url "https://github.com/raffaelefarinaro/ciaobot/releases/download/v#{version}/Ciaobot_#{version}_universal.dmg"
   name "Ciaobot"
@@ -8,7 +8,7 @@ cask "ciaobot-desktop" do
   homepage "https://github.com/raffaelefarinaro/ciaobot"
 
   depends_on formula: "ciaobot"
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
   auto_updates true
 
   app "Ciaobot.app"
