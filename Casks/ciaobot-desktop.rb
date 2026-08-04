@@ -1,6 +1,6 @@
 cask "ciaobot-desktop" do
-  version "0.7.0"
-  sha256 "b59886605a1ffca522d130e27179d7dd44716551a2007edd5555e2522e9a46ff"
+  version "0.7.1"
+  sha256 "024e1f224b564fc0be44ef22508f06b2ba1c3d83af17e8b82233d4a87f0e05df"
 
   url "https://github.com/raffaelefarinaro/ciaobot/releases/download/v#{version}/Ciaobot_#{version}_universal.dmg"
   name "Ciaobot"
